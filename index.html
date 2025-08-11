@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Modern - Mit den richtigen Tools zum Erfolg</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+            margin-bottom: 50px;
+            line-height: 1.6;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .tool-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tool-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tool-card p {
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .workflow {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .workflow h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .workflow-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Moodle kann modern!</h1>
+        <p class="subtitle">
+            Schluss mit langweiligen Moodle-Kursen! Mit diesen Tools erstellen Sie in Minuten 
+            visuell ansprechende und interaktive Lerninhalte.
+        </p>
+
+        <div class="tools-grid">
+            <div class="tool-card">
+                <h3>📚 To-Teach.ai</h3>
+                <p>
+                    KI-gestützte Erstellung von Unterrichtsmaterialien. Generiert automatisch 
+                    H5P-kompatible Übungen und interaktive Inhalte direkt für Moodle.
+                </p>
+            </div>
+
+            <div class="tool-card highlight">
+                <h3>✨ Lumi Education</h3>
+                <p>
+                    Desktop-App für H5P-Bausteine. Erstellen Sie offline interaktive Videos, 
+                    Quizze und Präsentationen - Upload in Moodle in Sekunden!
+                </p>
+            </div>
+
+            <div class="tool-card">
+                <h3>🤖 Claude AI</h3>
+                <p>
+                    Generiert moderne HTML-Seiten mit Animationen und responsivem Design. 
+                    Einfach Prompt eingeben, Code kopieren, in Moodle einfügen.
+                </p>
+            </div>
+
+            <div class="tool-card highlight">
+                <h3>🔧 GitHub Pages</h3>
+                <p>
+                    Hosten Sie aufwändige HTML/CSS/JS-Projekte kostenlos und binden Sie diese 
+                    per iFrame in Moodle ein. Perfekt für komplexe Visualisierungen!
+                </p>
+            </div>
+        </div>
+
+        <div class="workflow">
+            <h2>Der moderne Moodle-Workflow</h2>
+            
+            <div class="workflow-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <strong>Interaktive Übungen:</strong> Mit <code>to-teach.ai</code> oder 
+                    <code>Lumi</code> H5P-Inhalte erstellen (Drag & Drop, Memory, interaktive Videos)
+                </div>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <strong>Moderne Layouts:</strong> Claude nach HTML-Templates fragen - 
+                    mit Animationen, Glassmorphism-Effekten und responsive Design
+                </div>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <strong>Komplexe Apps:</strong> JavaScript-Anwendungen auf GitHub Pages hosten, 
+                    in Moodle per <code>&lt;iframe&gt;</code> oder Link einbinden
+                </div>
+            </div>
+
+            <div class="workflow-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <strong>Direkt in Moodle:</strong> HTML-Blöcke nutzen, CSS im Theme anpassen, 
+                    H5P-Aktivitäten einbinden - fertig ist das moderne Lernerlebnis!
+                </div>
+            </div>
+        </div>
+
+        <div class="cta">
+            <p style="color: #666; margin-bottom: 20px;">
+                <strong>Tipp:</strong> Alle Tools sind kostenlos oder haben kostenlose Versionen. 
+                Starten Sie heute noch mit der Modernisierung Ihrer Moodle-Kurse!
+            </p>
+            <a href="#" class="cta-button">Jetzt loslegen →</a>
+        </div>
+    </div>
+</body>
+</html>
